@@ -12,10 +12,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "14.x"
-      - name: Yarn install cache
-        uses: c-hive/gha-yarn-cache@v1
-        with:
-          node-version: '14.x'
       - name: Run build task
         run:  yarn build:prod
       - name: Configure AWS credentials
